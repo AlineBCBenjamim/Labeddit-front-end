@@ -1,9 +1,12 @@
+import { GlobalStyle } from "./GlobalStyles.styled";
+import  Router  from "./routes/Router";
 
 function App(){
 
   return (
     <>
-      <h1>Labeddit</h1>
+      <Router/>
+      <GlobalStyle/>
     </>
   )
 }

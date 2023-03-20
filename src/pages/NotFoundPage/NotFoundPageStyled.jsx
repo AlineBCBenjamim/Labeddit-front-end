@@ -4,6 +4,7 @@ export const NotFoundPageStyled = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 20px;
 
   .imagem {
     width: 100vw;

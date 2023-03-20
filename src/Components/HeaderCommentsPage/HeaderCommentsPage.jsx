@@ -4,9 +4,17 @@ import { HeaderCommentsPageStyles} from "../HeaderCommentsPage/HeaderCommentsSty
 import { goToCommentsPage } from "../../routes/coordinator";
 import logoSmall from "../../assets/logoSmall.svg";
 import x from "../../assets/x.svg";
+import { goToPostsPage } from "../../routes/coordinator";
 
 const HeaderCommentsPage = () => {
     const navigate = useNavigate();
+
+    function logout() {
+      window.localStorage.removeItem("labeddit-token");
+      context.setIsAuth(false);
+      goToLoginPage(navigate);
+    }
+
   return (
     <>
       <HeaderCommentsPageStyles>
@@ -25,7 +33,7 @@ const HeaderCommentsPage = () => {
               onClick={() => goToCommentsPage(navigate)}
               alt="logo small"
             />                 
-            <a onClick={() => goToCommentsPage(navigate)}>Logout</a>          
+            <a onClick={() => logout()}>Logout</a>          
         </section>
       </HeaderCommentsPageStyles>
     </>

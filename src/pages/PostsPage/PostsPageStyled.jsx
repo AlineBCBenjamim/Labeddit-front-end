@@ -5,9 +5,10 @@ export const PostsPageStyled = styled.main`
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  margin-bottom: 50px;
 
   .container-post {
-    display: flex;  
+    display: flex;
     align-items: flex-start;
     flex-direction: column;
     margin-top: 30px;
@@ -44,6 +45,7 @@ export const PostsPageStyled = styled.main`
     font-weight: 700;
     font-size: 18px;
     line-height: 25px;
+    cursor: pointer;
   }
 
   hr {

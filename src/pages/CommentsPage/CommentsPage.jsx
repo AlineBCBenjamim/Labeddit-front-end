@@ -8,7 +8,7 @@ import { CommentsPageStyled } from "./CommentsPageStyled";
 import Post from "../../components/Post/Post";
 import Comment from "../../components/Comment/Comment";
 import { BASE_URL } from "../../constants/url";
-// import Footer from "../../components/Footer/Footer";
+import Footer from "../../components/Footer/Footer";
 
 
 export default function CommentsPage() {
@@ -75,7 +75,7 @@ export default function CommentsPage() {
       <CommentsPageStyled>
         <section className="container-input">
           <Post post={post} />
-          <div className="input">
+          <div className="input-comment">
             <input
               type="text"
               placeholder="Escreva seu comentário..."
@@ -99,7 +99,7 @@ export default function CommentsPage() {
             })}
         </section>
       </CommentsPageStyled>
-      {/* <Footer page={page} /> */}
+      <Footer/>
     </>
   );
 }

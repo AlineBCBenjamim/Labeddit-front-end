@@ -7,6 +7,7 @@ import { GlobalContext } from "../../contexts/GlobalContext";
 import { goToLoginPage } from "../../routes/coordinator";
 import { BASE_URL } from "../../constants/url";
 import axios from "axios";
+import Footer from "../../components/Footer/Footer";
 
 const PostsPage = () => {
   const {context, posts, setPosts, fetchPosts} = useContext(GlobalContext);
@@ -70,13 +71,14 @@ const PostsPage = () => {
           <hr />
         </section>
         <section className="container-posts">
-          {posts
+          {Array.isArray(posts) && posts
             .map((post) => {
               return < Post key={post.id} post={post}/>
             })
           .reverse()}
         </section>
       </PostsPageStyled>
+      <Footer/>
     </>
   );
 };

@@ -10,24 +10,21 @@ export const PostStyled = styled.main`
   padding: 12px;
   width: 22.438rem;
   margin-top: 15px;
+  margin-bottom: 20px;
 
   .container-posts {
     h6 {
+      margin: 0;
+      padding: 0;
       margin-bottom: 20px;
-      p {
-        font-weight: 400;
-        font-size: 18px;
-      }
+      font-weight: 400;
+      font-size: 12px;
+      color: #6f6f6f;
     }
-  }
-  h6 {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    flex: none;
-    color: #6f6f6f;
-    margin-top: 9px;
-    margin-left: 10px;
+    p {
+      font-weight: 400;
+      font-size: 18px;
+    }
   }
 
   .container-arrow {
@@ -46,5 +43,8 @@ export const PostStyled = styled.main`
     h6 {
       margin: 0 5px;
     }
+  }
+  img {
+    cursor: pointer;
   }
 `;

@@ -10,10 +10,14 @@ export const goToSignupPage = (navigate) => {
   navigate("/signup");
 };
 
-// export const goToPostsPage = (navigate) => {
-//   navigate("/posts");
-// };
+export const goToPostsPage = (navigate) => {
+  navigate("/posts");
+};
 
-// export const goToNotFoundPage = (navigate) => {
-//   navigate("*");
-// };
+export const goToCommentsPage = (navigate, postId) => {
+  navigate(`/posts/${postId}/comment`);
+}
+
+export const goToNotFoundPage = (navigate) => {
+  navigate("*");
+};

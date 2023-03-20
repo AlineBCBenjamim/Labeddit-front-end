@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HeaderSignupPagesStyles = styled.header`
+export const HeaderPostsPagesStyles = styled.header`
   display: flex;
   align-items: center;
 
@@ -23,7 +23,7 @@ export const HeaderSignupPagesStyles = styled.header`
   }
 
   a {
-    font-family: "Noto Sans";    
+    font-family: "Noto Sans";
     font-weight: 600;
     font-size: 18px;
     text-align: center;

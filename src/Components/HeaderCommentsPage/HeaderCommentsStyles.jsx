@@ -25,7 +25,7 @@ export const HeaderCommentsPageStyles = styled.header`
   }
 
   .container-logoSmall {
-    position: fixed;
+    position: absolute;
     transform: translateX(-50%);
     width: 28.02px;
     height: 31.67px;

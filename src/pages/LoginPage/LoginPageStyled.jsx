@@ -80,11 +80,12 @@ export const LoginPageStyled = styled.main`
     color: #ffffff;
     background: linear-gradient(90deg, #ff6489 0%, #f9b24e 100%);
     border-radius: 27px;
+    cursor: pointer;
   }
 
   hr {
-    margin: 10px 0 10px 0;    
-    width: 363px;  
+    margin: 10px 0 10px 0;
+    width: 363px;
     border-image-slice: 1;
     border-image-source: linear-gradient(
       90deg,
@@ -107,5 +108,6 @@ export const LoginPageStyled = styled.main`
     font-weight: 700;
     font-size: 18px;
     box-sizing: border-box;
+    cursor: pointer;
   }
 `;

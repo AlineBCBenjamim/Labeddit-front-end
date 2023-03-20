@@ -49,15 +49,23 @@ export function Comment ({comment}) {
   return (
     <>
       <PostStyled>
-        <section className='container-post'>
+        <section className="container-posts">
           <h6>Comentário enviado por: {comment.creatorName}</h6>
           <p>{comment.content}</p>
         </section>
-        <section>
-          <div className='container-arrow'>
-            <img src={upArrow} alt="like" onClick={()=> likeComment(comment.id)}/>
+        <section className="container-arrow">
+          <div>
+            <img
+              src={upArrow}
+              alt="like"
+              onClick={() => likeComment(comment.id)}
+            />
             <h6>{comment.likes}</h6>
-            <img src={downArrow} alt="dislike" onClick={() => dislikeComment(comment.id)}/>
+            <img
+              src={downArrow}
+              alt="dislike"
+              onClick={() => dislikeComment(comment.id)}
+            />
             <h6>{comment.dislikes}</h6>
           </div>
         </section>

@@ -1,91 +1,63 @@
 import styled from "styled-components";
 
 export const CommentsPageStyled = styled.main`
-  padding: 0 25px;
-  margin-top: 35px;
   display: flex;
-  min-height: 87vh;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 30px;
+  justify-content: space-between;
+  margin-bottom: 50px;
+
   .container-input {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    /* align-items: center; */
-
-    .input {
-      background-color: #e0e0e0;
-      min-height: 131px;
-      width: 22.438rem;
-      margin: 10px 0;
-      border-radius: 12px;
-      border: none;
-      input {
-        margin: 20px;
-        background-color: #e0e0e0;
-        border: none;
-        font-size: 1.125rem;
-      }
-      input:focus {
-        outline: none;
-      }
-    }
-    button {
-      height: 3.188rem;
-      width: 22.438rem;
-      border-radius: 12px;
-      background: rgb(255, 100, 137);
-      background: linear-gradient(
-        90deg,
-        rgba(255, 100, 137, 1) 0%,
-        rgba(249, 178, 78, 1) 100%
-      );
-      color: #fff;
-      border: none;
-    }
-    button:active {
-      background-color: #fff;
-      color: #fe7e02;
-    }
+    margin-top: 30px;
   }
+
+  .input-comment {
+    background: #e0e0e0;
+    border-radius: 12px;
+    width: 364px;
+    height: 131px;
+    margin-top: 12px;
+  }
+
+  input {
+    border: none;
+    background-color: #e0e0e0;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 18px;
+  }
+  input:focus {
+    outline: none;
+  }
+
+  button {
+    background: linear-gradient(90deg, #ff6489 0%, #f9b24e 100%);
+    border-radius: 12px;
+    border: none;
+    width: 365px;
+    height: 51px;
+    margin-top: 15px;
+    color: #ffff;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    cursor: pointer;
+  }
+
   hr {
-    width: 22.438rem;
-    border: 1px solid;
+    width: 363.01px;
+    height: 0px;
+    margin-top: 30px;
+    gap: 10px;
     border-image-slice: 1;
     border-image-source: linear-gradient(
       90deg,
       rgba(255, 100, 137, 1) 0%,
       rgba(249, 178, 78, 1) 100%
     );
-    margin: 25px 0;
-  }
-  .container-posts {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    width: 22.438rem;
-  }
-  .loading {
-    position: relative;
-    left: 50%;
-    right: 50%;
-    border: 3px solid #f3f3f3;
-    border-top: 3px solid #fe7e02;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    animation: spin 1s linear infinite;
-  }
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
   }
 `;
     

@@ -10,6 +10,7 @@ import {
     goToPostsPage,
     goToSignupPage,
 }from "../../routes/coordinator";
+import Footer from "../../components/Footer/Footer";
 
 
 const LoginPage = () => {
@@ -81,6 +82,7 @@ const LoginPage = () => {
                 }}>Crie uma conta!</button>
             </section>
         </LoginPageStyled>
+        <Footer/>
     </>
   )
 };

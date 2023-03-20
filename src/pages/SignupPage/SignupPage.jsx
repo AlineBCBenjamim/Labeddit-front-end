@@ -6,6 +6,7 @@ import { goToPostsPage } from "../../routes/coordinator";
 import { BASE_URL } from "../../constants/url";
 import { GlobalContext } from "../../contexts/GlobalContext";
 import axios from "axios";
+import Footer from "../../components/Footer/Footer";
 
 const SignupPage = () => {
   const context = useContext(GlobalContext);
@@ -103,6 +104,7 @@ const SignupPage = () => {
           </button>
         </section>
       </SignupPageStyled>
+      <Footer/>
     </>
   );
 };

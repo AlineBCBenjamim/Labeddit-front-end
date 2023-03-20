@@ -84,5 +84,6 @@ export const SignupPageStyled = styled.main`
     color: #ffffff;
     background: linear-gradient(90deg, #ff6489 0%, #f9b24e 100%);
     border-radius: 27px;
+    cursor: pointer;
   }
 `;

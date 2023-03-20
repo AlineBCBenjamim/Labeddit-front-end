@@ -15,7 +15,7 @@ export const HeaderSignupPagesStyles = styled.header`
   }
 
   img {
-    position: fixed;
+    position: absolute;
     transform: translateX(-50%);
     width: 28.02px;
     left: 50%;    

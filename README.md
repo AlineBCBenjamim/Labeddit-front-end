@@ -15,34 +15,34 @@
 
 ## 📸 Imagem do Labeddit
 
-
+![imagem da página da loginPage](./src/assets/loginPage.png)
+![imagem da página da signupPage](./src/assets/signupPage.png)
+![imagem da página da postsPage](./src/assets/postsPage.png)
+![imagem da página da commentsPage](./src/assets/commentsPage.png)
 
 ---
 
 ## ⚙️Tecnologias utilizadas
 
-1. ``Node``
-2. ``Typescript``
-3. ``React.js``
+1. ``React.js``
+2. ``React Router``
+3. ``Axios``
 4. ``Styled Components``
-<!-- 5. ``React Router``
-6. ``Axios`` -->
-<!-- 7.``API`` -->
+5. ``Vite.js``
+7. ``Consumo de API REST`` 
 
 
 ---
 
 ## 📱Funcionabilidades do Projeto
 
-- login
-- signup
-- get posts
-- create post
-- edit post
-- delete post
-- like / dislike post
+- Login
+- Signup
+- Create posts
+- Create comments
+- Like ou dislike posts
+- Like ou dislike comments
 <br>
-
 
 ---
 
@@ -60,12 +60,12 @@
 
 ## 💻 Repositório Back-End
 
-- GitHub <link>
+- GitHub <https://github.com/AlineBCBenjamim/Labeddit-back-end>
 
 
-## Deploy
+## 🧠 Deploy
 
-- Vercel <link>
+- Vercel <https://labeddit-front-end-nine.vercel.app/login>
 
 ## 📀Rodando o Projeto
 

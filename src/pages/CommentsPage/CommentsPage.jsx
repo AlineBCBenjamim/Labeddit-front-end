@@ -8,7 +8,7 @@ import { CommentsPageStyled } from "./CommentsPageStyled";
 import Post from "../../components/Post/Post";
 import Comment from "../../components/Comment/Comment";
 import { BASE_URL } from "../../constants/url";
-import Footer from "../../components/Footer/Footer";
+import Footer from "../../components/Footer";
 
 
 export default function CommentsPage() {

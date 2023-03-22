@@ -32,7 +32,7 @@ export default function GlobalState() {
       setPosts(response.data);
     } catch (error) {
       console.log(error?.response?.data);
-      window.alert(error?.response?.data?.message);
+      window.alert(error?.response?.data);
     }
   };
 

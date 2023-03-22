@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const FooterStyled = styled.header`
+export const FooterStyled = styled.footer`
   display: flex;
   align-items: center;
   justify-content: space-between;  

@@ -7,7 +7,7 @@ import { GlobalContext } from "../../contexts/GlobalContext";
 import { goToLoginPage } from "../../routes/coordinator";
 import { BASE_URL } from "../../constants/url";
 import axios from "axios";
-import Footer from "../../components/Footer";
+import Footer from "../../components/Footer/index";
 
 const PostsPage = () => {
   const {context, posts, setPosts, fetchPosts} = useContext(GlobalContext);

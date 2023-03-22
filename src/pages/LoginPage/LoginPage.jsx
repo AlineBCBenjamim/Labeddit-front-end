@@ -10,7 +10,7 @@ import {
     goToPostsPage,
     goToSignupPage,
 }from "../../routes/coordinator";
-import Footer from "../../components/Footer";
+import Footer from "../../components/Footer/index";
 
 
 const LoginPage = () => {

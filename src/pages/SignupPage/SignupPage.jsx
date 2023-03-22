@@ -6,7 +6,7 @@ import { goToPostsPage } from "../../routes/coordinator";
 import { BASE_URL } from "../../constants/url";
 import { GlobalContext } from "../../contexts/GlobalContext";
 import axios from "axios";
-import Footer from "../../components/Footer";
+import Footer from "../../components/Footer/index";
 
 const SignupPage = () => {
   const context = useContext(GlobalContext);
@@ -109,4 +109,4 @@ const SignupPage = () => {
   );
 };
 
-export default SignupPage;
+export default SignupPage

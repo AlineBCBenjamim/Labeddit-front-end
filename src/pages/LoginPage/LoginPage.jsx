@@ -14,6 +14,7 @@ import Footer from "../../components/Footer/Footer";
 
 const LoginPage = () => {
   const { context, setPage } = useContext(GlobalContext);
+  const [isLoading, setIsLoading] = useState(false);
 
   const navigate = useNavigate();
 
@@ -35,6 +36,8 @@ const LoginPage = () => {
 
   const login = async () => {
     try {
+      setIsLoading(true);
+
       const body = {
         email: form.email,
         password: form.password,
@@ -57,6 +60,8 @@ const LoginPage = () => {
       console.log(error?.response?.data);
       alert(error?.reponse?.data);
       window.localStorage.removeItem("labeddit-token");
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -87,8 +92,8 @@ const LoginPage = () => {
           />
         </section>
         <section className="container-button">
-          <button className="button-color" onClick={login}>
-            Continuar
+          <button className="button-color" onClick={login} disabled={isLoading}>
+            {isLoading ? <div className="loading"></div> : "Continuar"}
           </button>
           <hr />
           <button

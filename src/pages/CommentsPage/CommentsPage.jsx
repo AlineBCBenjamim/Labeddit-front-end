@@ -17,7 +17,7 @@ export default function CommentsPage() {
 
   const [content, setContent] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const [page, setPage] = useState("CommentsPage");
+  
 
   const navigate = useNavigate();
   const params = useParams();

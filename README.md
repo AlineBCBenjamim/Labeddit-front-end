@@ -66,7 +66,7 @@
 
 ## 🧠 Deploy
 
-- Vercel <https://labeddit-front-end-nine.vercel.app/login>
+- Surge <https://labeddit-aline-carvalho.surge.sh>
 
 ---
 ## 📀Rodando o Projeto

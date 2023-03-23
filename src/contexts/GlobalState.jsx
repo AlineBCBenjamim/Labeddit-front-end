@@ -14,7 +14,7 @@ export default function GlobalState() {
     if (token) {
       setIsAuth(true);
     }
-  });
+  }, []);
 
   const context = {
     isAuth: isAuth,

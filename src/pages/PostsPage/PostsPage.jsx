@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import HeaderPostsPage from "../../components/HeaderPostsPage/HeaderPostsPage";
 import { PostsPageStyled } from "./PostsPageStyled";
 import Post from "../../components/Post/Post";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { GlobalContext } from "../../contexts/GlobalContext";
 import { goToLoginPage } from "../../routes/coordinator";
 import { BASE_URL } from "../../constants/url";
@@ -11,8 +11,7 @@ import Footer from "../../components/Footer/index";
 
 const PostsPage = () => {
   const {context, posts, setPosts, fetchPosts} = useContext(GlobalContext);
-  const params = useParams();
-
+  
   const [content, setContent] = useState("");
 
   const navigate = useNavigate();

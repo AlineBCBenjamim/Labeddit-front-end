@@ -6,7 +6,7 @@ import logoSmall from "../../assets/logoSmall.svg";
 import { GlobalContext } from "../../contexts/GlobalContext";
 
 const HeaderPostsPage = () => {
-  const { context, page, setPage } = useContext(GlobalContext);
+  const { context, setPage } = useContext(GlobalContext);
 
   const navigate = useNavigate();
 

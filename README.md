@@ -29,7 +29,7 @@
 3. ``Axios``
 4. ``Styled Components``
 5. ``Vite.js``
-7. ``Consumo de API REST`` 
+6. ``Consumo de API REST`` 
 
 
 ---

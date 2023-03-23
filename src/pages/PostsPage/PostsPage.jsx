@@ -10,8 +10,8 @@ import axios from "axios";
 import Footer from "../../components/Footer/index";
 
 const PostsPage = () => {
-  const {context, posts, setPosts, fetchPosts} = useContext(GlobalContext);
-  
+  const { context, posts, setPosts, fetchPosts } = useContext(GlobalContext);
+
   const [content, setContent] = useState("");
 
   const navigate = useNavigate();
@@ -20,37 +20,36 @@ const PostsPage = () => {
     const token = window.localStorage.getItem("labeddit-token");
     if (token) {
       context.setIsAuth(true);
-    }else{
+    } else {
       goToLoginPage(navigate);
     }
   }, [context]);
 
-
   useEffect(() => {
-    fetchPosts(); 
-  },[]);
+    fetchPosts();
+  }, []);
 
   const createPost = async () => {
-    try{
+    try {
       const body = {
-        content:content,
+        content: content,
       };
       const config = {
-        headers:{
+        headers: {
           Authorization: window.localStorage.getItem("labeddit-token"),
         },
       };
       const response = await axios.post(
-      `${BASE_URL}/posts/create`,
-      body,
-      config
+        `${BASE_URL}/posts/create`,
+        body,
+        config
       );
       setPosts(response.data);
       fetchPosts();
-      }catch (error) {
-        console.log(error?.response?.data);
-        window.alert(error?.response?.data);
-      }    
+    } catch (error) {
+      console.log(error?.response?.data);
+      window.alert(error?.response?.data);
+    }
   };
 
   return (
@@ -66,18 +65,21 @@ const PostsPage = () => {
               onChange={(e) => setContent(e.target.value)}
             />
           </div>
-          <button className="button-color" type="submit" onClick={createPost}>Postar</button>
+          <button className="button-color" type="submit" onClick={createPost}>
+            Postar
+          </button>
           <hr />
         </section>
         <section className="container-posts">
-          {Array.isArray(posts) && posts
-            .map((post) => {
-              return < Post key={post.id} post={post}/>
-            })
-          .reverse()}
+          {Array.isArray(posts) &&
+            posts
+              .map((post) => {
+                return <Post key={post.id} post={post} />;
+              })
+              .reverse()}
         </section>
       </PostsPageStyled>
-      <Footer/>
+      <Footer />
     </>
   );
 };

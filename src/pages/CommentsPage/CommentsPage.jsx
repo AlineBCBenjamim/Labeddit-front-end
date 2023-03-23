@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useContext, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import HeaderCommentsPage  from "../../Components/HeaderCommentsPage/HeaderCommentsPage";
+import HeaderCommentsPage  from "../../components/HeaderCommentsPage/HeaderCommentsPage";
 import { GlobalContext } from "../../contexts/GlobalContext";
 import { goToLoginPage } from "../../routes/coordinator";
 import { CommentsPageStyled } from "./CommentsPageStyled";

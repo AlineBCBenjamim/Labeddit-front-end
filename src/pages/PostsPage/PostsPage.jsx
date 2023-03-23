@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
-import HeaderPostsPage from "../../Components/HeaderPostsPage/HeaderPostsPage";
+import HeaderPostsPage from "../../components/HeaderPostsPage/HeaderPostsPage";
 import { PostsPageStyled } from "./PostsPageStyled";
-import Post from "../../Components/Post/Post";
+import Post from "../../components/Post/Post";
 import { useNavigate, useParams } from "react-router-dom";
 import { GlobalContext } from "../../contexts/GlobalContext";
 import { goToLoginPage } from "../../routes/coordinator";

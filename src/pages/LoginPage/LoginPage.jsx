@@ -14,7 +14,7 @@ import Footer from "../../components/Footer/index";
 
 
 const LoginPage = () => {
-    const { context, setPage } = useContext(GlobalContext);
+    const { context, setPage } = useContext(GlobalContext);    
 
     const navigate = useNavigate();
     

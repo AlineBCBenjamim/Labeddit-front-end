@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { SignupPageStyled } from "./SignupPageStyled";
-import HeaderSignupPage from "../../Components/HeaderSignupPage/HeaderSignupPage";
+import HeaderSignupPage from "../../components/HeaderSignupPage/HeaderSignupPage";
 import { goToPostsPage } from "../../routes/coordinator";
 import { BASE_URL } from "../../constants/url";
 import { GlobalContext } from "../../contexts/GlobalContext";
